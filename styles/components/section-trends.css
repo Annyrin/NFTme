@@ -1,0 +1,129 @@
+.trends {
+  padding-bottom: 120px;
+}
+
+.trends .section__title {
+  padding-top: 120px;
+}
+
+.trend_paragraph {
+  display: flex;
+  justify-content: space-between;
+}
+
+.trend_paragraph .nft__price {
+  letter-spacing: 1px;
+  color: #d400b3;
+  font-size: 16px;
+}
+
+.trend__element .trend__info {
+  font-size: 20px;
+  color: #e5e5e5;
+}
+
+.author {
+  font-family: "PaytoneOne";
+  font-size: 32px;
+}
+
+.trend__element p {
+  padding-top: 7px;
+  padding-bottom: 12px;
+  font-size: 16px;
+  color: #c4c4c4;
+}
+
+.trends__container {
+  padding-top: 18px;
+  columns: 2 auto;
+  column-gap: 86px;
+}
+
+.button__marketplace {
+  font-family: "PaytoneOne";
+  letter-spacing: 1px;
+  color: #d400b3;
+  padding: 0;
+  text-align: center;
+  display: block;
+  font-size: 28px;
+}
+
+.trend__element:not(:first-child):not(:nth-child(5)) {
+  padding-top: 78px;
+}
+
+@media screen and (max-width: 1439px) {
+  .trends {
+    padding-bottom: 60px;
+  }
+
+  .trends .section__title {
+    padding-top: 45px;
+    text-align: center;
+  }
+
+  .trends__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .button__marketplace {
+    padding: 0;
+    text-align: center;
+    display: block;
+    font-size: 24px;
+    border-right: none;
+  }
+
+  .trend__element:not(:first-child):not(:nth-child(5)) {
+    padding-top: 36px;
+  }
+
+  .trend__element:nth-child(5) {
+    padding-top: 36px;
+  }
+}
+
+@media screen and (max-width: 888px) {
+  .trends .section__title {
+    text-align: center;
+  }
+
+  .author {
+    font-size: 26px;
+  }
+
+  .trend__element .trend__info {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .trends br {
+    display: none;
+  }
+
+  .button__marketplace {
+    padding: 0;
+    text-align: center;
+    display: block;
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .trend__element img {
+    width: 90%;
+    height: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .button__marketplace {
+    padding-top: 10px;
+    font-size: 22px;
+  }
+}

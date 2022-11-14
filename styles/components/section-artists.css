@@ -1,0 +1,171 @@
+.artists {
+  background-color: #262627;
+  padding-bottom: 65px;
+  padding-top: 75px;
+  position: relative;
+  padding-bottom: 120px;
+}
+
+.artists__textcontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+}
+
+.artists .section__title {
+  text-align: right;
+}
+
+.button__artists {
+  font-family: "PaytoneOne";
+  letter-spacing: 1px;
+  color: #d400b3;
+  padding: 0;
+  display: block;
+  font-size: 28px;
+}
+
+.artists__profilecontainer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 50px;
+}
+
+.artist__profile {
+  position: relative;
+  height: 389px;
+  width: 389px;
+  background-repeat: no-repeat;
+}
+
+.artist__profile:nth-of-type(1) {
+  background-image: url("../../images/santigoArt@1x.jpg");
+  background-image: -webkit-image-set(
+    url("../../images/santigoArt@2x.jpg") 2x,
+    url("../../images/santigoArt@1x.jpg") 1x
+  );
+  background-image: image-set(
+    url("../../images/santigoArt@2x.jpg") type("image/jpg") 2x,
+    url("../../images/santigoArt@1x.jpg") type("image/jpg") 1x,
+    url("../../images/santigoArt@2x.jpg") 2x,
+    url("../../images/santigoArt@1x.jpg") 1x
+  );
+}
+
+.artist__profile:nth-of-type(2) {
+  background-image: url("../../images/roganArt@1x.jpg");
+  background-image: -webkit-image-set(
+    url("../../images/roganArt@2x.jpg") 2x,
+    url("../../images/roganArt@1x.jpg") 1x
+  );
+  background-image: image-set(
+    url("../../images/roganArt@2x.jpg") type("image/jpg") 2x,
+    url("../../images/roganArt@1x.jpg") type("image/jpg") 1x,
+    url("../../images/roganArt@2x.jpg") 2x,
+    url("../../images/roganArt@1x.jpg") 1x
+  );
+}
+
+.artist__profile:nth-of-type(3) {
+  background-image: url("../../images/masonArt@1x.jpg");
+  background-image: -webkit-image-set(
+    url("../../images/masonArt@2x.jpg") 2x,
+    url("../../images/masonArt@1x.jpg") 1x
+  );
+  background-image: image-set(
+    url("../../images/masonArt@2x.jpg") type("image/jpg") 2x,
+    url("../../images/masonArt@1x.jpg") type("image/jpg") 1x,
+    url("../../images/masonArt@2x.jpg") 2x,
+    url("../../images/masonArt@1x.jpg") 1x
+  );
+}
+
+.artist__photo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 140px;
+}
+
+.artist {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 250px;
+  font-family: "PaytoneOne";
+  font-size: 32px;
+}
+
+.follow__button {
+  position: absolute;
+  top: 334px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media screen and (max-width: 1272px) {
+  .artists {
+    padding-top: 50px;
+    padding-bottom: 80px;
+  }
+}
+
+@media screen and (max-width: 888px) {
+  .artist {
+    font-size: 26px;
+  }
+
+  .artists__profilecontainer {
+    padding-top: 30px;
+  }
+
+  .button__artists {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  br {
+    display: none;
+  }
+  .artists__textcontainer {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .artists__profilecontainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .artists .section__title {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 418px) {
+  .artist__profile {
+    width: 250px;
+  }
+
+  .artists__profilecontainer {
+    padding-top: 50px;
+  }
+}
+
+@media screen and (max-width: 348px) {
+  .artist__profile {
+    width: 250px;
+  }
+  .artists__profilecontainer {
+    padding-top: 90px;
+  }
+}
+
+@media screen and (max-width: 348px) {
+  .artists__profilecontainer {
+    padding-top: 120px;
+  }
+}

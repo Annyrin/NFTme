@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NFT me</title>
+    <link
+      media="(max-width: 888px)"
+      rel="preload"
+      href="./images/titleMob@1x.jpg"
+      as="image"
+      imagesrcset="./images/titleMob@1x.jpg 1x, ./images/titleMob@2x.jpg 2x"
+    />
+    <link
+      media="(min-width: 889px)"
+      rel="preload"
+      href="./images/title@1x.jpg"
+      as="image"
+      imagesrcset="./images/title@1x.jpg 1x, ./images/title@2x.jpg 2x"
+    />
+    <link
+      rel="preload"
+      href="./fonts/PaytoneOne-Regular.woff2"
+      as="font"
+      type="font/woff2"
+    />
+    <link
+      rel="preload"
+      href="./fonts/SourceSansPro-Regular.woff2"
+      as="font"
+      type="font/woff2"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/favicon/favicon-16x16.png"
+    />
+    <link
+      rel="mask-icon"
+      href="./images/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__wrapper">
+        <a class="header__logo" href="index.html">
+          <img
+            width="60"
+            height="60"
+            srcset="images/logo.svg"
+            alt="NFT me logo"
+            class="logo-image"
+          />
+        </a>
+
+        <button class="header__menu" id="menu-button" aria-label="Menu">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
+
+        <nav class="header__nav" id="nav">
+          <ul class="header__list">
+            <li class="header__item">
+              <a class="link" href="#">Marketplace</a>
+            </li>
+            <li class="header__item"><a class="link" href="#">Artists</a></li>
+            <li class="header__item"><a class="link" href="#">Contact</a></li>
+          </ul>
+          <a class="button button__header" href="#">Buy template</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="intro">
+        <div class="container intro__container">
+          <h1 class="title title__text">
+            Discover rare<br />
+            digital art and<br />
+            collect NFT's
+          </h1>
+          <p class="intro__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Suspendisse<br />
+            varius enim in eros elementum tristique. Duis cursus, mi quis
+            viverra<br />
+            ornare, eros dolor interdum.
+          </p>
+        </div>
+        <div class="intro__button">
+          <a class="video__link" href="#"
+            >Watch video
+            <span>
+              <svg
+                width="26"
+                height="22"
+                viewBox="0 0 42 42"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="42" height="42" fill="white" />
+                <g clip-path="url(#clip0_10_9)">
+                  <path
+                    d="M28.9947 20.5508C29.3687 20.7335 29.3687 21.2665 28.9947 21.4493L17.2623 27.1808C16.9302 27.3431 16.5429 27.1013 16.5429 26.7316V15.2684C16.5429 14.8988 16.9302 14.6569 17.2623 14.8192L28.9947 20.5508Z"
+                    fill="#D500B3"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_10_9">
+                    <rect
+                      width="14"
+                      height="14"
+                      fill="white"
+                      transform="translate(16 14)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+            </span>
+          </a>
+        </div>
+      </section>
+      <section class="info">
+        <div class="container info__container">
+          <div class="info__wrapper">
+            <p>
+              lorem ipsum dolor sit amet, consectetur<br />
+              adipiscing elit. Suspendisse varius enim in eros<br />
+              elementum tristique. Duis cursus, mi quis<br />
+              viverra ornare, eros dolor interdum nulla, ut<br />
+              commodo diam libero vitae erat
+            </p>
+            <dl>
+              <div>
+                <dt>17K</dt>
+                <dd>Artwork</dd>
+              </div>
+              <div>
+                <dt>4.5K</dt>
+                <dd>Auctions</dd>
+              </div>
+              <div>
+                <dt>23</dt>
+                <dd>Artists</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </section>
+      <section class="carousel">
+        <div class="slider__left swiper">
+          <div class="swiper-wrapper">
+            <picture class="swiper-slide">
+              <source
+                srcset="./images/yellow@1x.jpg 1x, ./images/yellow@2x.jpg 2x"
+              />
+              <img src="./images/yellow@1x.jpg" alt="Flower NFT" />
+            </picture>
+            <picture class="swiper-slide">
+              <source
+                srcset="./images/dots@1x.jpg 1x, ./images/dots@2x.jpg 2x"
+              />
+              <img src="./images/dots@1x.jpg" alt="Dots NFT" />
+            </picture>
+            <picture class="swiper-slide">
+              <source srcset="./images/man@1x.jpg 1x, ./images/man@2x.jpg 2x" />
+              <img src="./images/man@1x.jpg" alt="Man NFT" />
+            </picture>
+          </div>
+        </div>
+        <div class="slider__right swiper" dir="rtl">
+          <div class="swiper-wrapper">
+            <picture class="swiper-slide">
+              <source srcset="./images/car@1x.jpg 1x, ./images/car@2x.jpg 2x" />
+              <img src="./images/car@1x.jpg" alt="Car NFT" />
+            </picture>
+            <picture class="swiper-slide">
+              <source
+                srcset="./images/faces@1x.jpg 1x, ./images/faces@2x.jpg 2x"
+              />
+              <img src="./images/face@1x.jpg" alt="Faces NFT" />
+            </picture>
+            <picture class="swiper-slide">
+              <source
+                srcset="./images/hand@1x.jpg 1x, ./images/hand@2x.jpg 2x"
+              />
+              <img src="./images/hand@1x.jpg" alt="Hand NFT" />
+            </picture>
+          </div>
+        </div>
+      </section>
+      <section class="container create__sell">
+        <h2 class="section__title">Create and sell NFT's</h2>
+        <div class="card__box">
+          <div class="card">
+            <svg
+              class="card__svg"
+              width="375"
+              height="97"
+              viewBox="0 0 375 97"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M25 97C38.8071 97 50 85.8071 50 72C50 58.1929 38.8071 47 25 47C11.1929 47 0 58.1929 0 72C0 85.8071 11.1929 97 25 97Z"
+                fill="#C4C4C4"
+              />
+              <line
+                x1="287.354"
+                y1="-0.353553"
+                x2="375.354"
+                y2="87.6464"
+                stroke="#858586"
+              />
+            </svg>
+            <h3 class="card__title">&nbsp;Connect your wallet</h3>
+            <p class="card__paragraph">
+              Lorem ipsum dolor sit amet, consectetur<br />
+              adipiscing elit
+            </p>
+          </div>
+          <div class="card">
+            <svg
+              class="card__svg"
+              width="375"
+              height="97"
+              viewBox="0 0 375 97"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M25 97C38.8071 97 50 85.8071 50 72C50 58.1929 38.8071 47 25 47C11.1929 47 0 58.1929 0 72C0 85.8071 11.1929 97 25 97Z"
+                fill="#C4C4C4"
+              />
+              <line
+                x1="287.354"
+                y1="-0.353553"
+                x2="375.354"
+                y2="87.6464"
+                stroke="#858586"
+              />
+            </svg>
+            <h3 class="card__title">&nbsp;Explore our marketplace</h3>
+            <p class="card__paragraph">
+              Lorem ipsum dolor sit amet, consectetur
+            </p>
+          </div>
+          <div class="card">
+            <svg
+              class="card__svg"
+              width="375"
+              height="97"
+              viewBox="0 0 375 97"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M25 97C38.8071 97 50 85.8071 50 72C50 58.1929 38.8071 47 25 47C11.1929 47 0 58.1929 0 72C0 85.8071 11.1929 97 25 97Z"
+                fill="#C4C4C4"
+              />
+              <line
+                x1="287.354"
+                y1="-0.353553"
+                x2="375.354"
+                y2="87.6464"
+                stroke="#858586"
+              />
+            </svg>
+            <h3 class="card__title">&nbsp;Create your collection</h3>
+            <p class="card__paragraph">
+              Loerm ipsum dolor sit amet, consectetur<br />
+              adipiscing elit
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="container trends">
+        <h2 class="section__title">Trending this week</h2>
+        <div class="trends__container">
+          <div class="trend__element">
+            <p class="trend__info">
+              Lorem ipsum dolor sit amet, consectetur dolore adipiscing<br />elit,
+              sed do eiusmod tempor incididunt ut labore et dolore<br />magna
+              aliqua.
+            </p>
+          </div>
+          <div class="trend__element">
+            <h3 class="author">Mandy Ross</h3>
+            <div class="trend_paragraph">
+              <p>Miricale Culture</p>
+              <p class="nft__price">3.24 ETH</p>
+            </div>
+            <picture>
+              <source
+                srcset="
+                  ./images/trendFace@1x.jpg 1x,
+                  ./images/trendFace@2x.jpg 2x
+                "
+              />
+              <img src="./images/trendFace@1x.jpg" alt="Women face NFT" />
+            </picture>
+          </div>
+          <div class="trend__element">
+            <h3 class="author">Dan Gatty</h3>
+            <div class="trend_paragraph">
+              <p>Miricale Culture</p>
+              <p class="nft__price">3.24 ETH</p>
+            </div>
+            <picture>
+              <source
+                srcset="
+                  ./images/trendMess@1x.jpg 1x,
+                  ./images/trendMess@2x.jpg 2x
+                "
+              />
+              <img src="./images/trendMess@1x.jpg" alt="Mess NFT" />
+            </picture>
+          </div>
+          <div class="trend__element">
+            <h3 class="author">Mandy Ross</h3>
+            <div class="trend_paragraph">
+              <p>Miricale Culture</p>
+              <p class="nft__price">3.24 ETH</p>
+            </div>
+            <picture>
+              <source
+                srcset="
+                  ./images/trendInfinity@1x.jpg 1x,
+                  ./images/trendInfinity@2x.jpg 2x
+                "
+              />
+              <img src="./images/trendInfinity@1x.jpg" alt="Infinity  NFT" />
+            </picture>
+          </div>
+          <div class="trend__element">
+            <h3 class="author">Jason Riley</h3>
+            <div class="trend_paragraph">
+              <p>Miricale Culture</p>
+              <p class="nft__price">3.24 ETH</p>
+            </div>
+            <picture>
+              <source
+                srcset="
+                  ./images/trendBrain@1x.jpg 1x,
+                  ./images/trendBrain@2x.jpg 2x
+                "
+              />
+              <img src="./images/trendBrain@1x.jpg" alt="Brain NFT" />
+            </picture>
+          </div>
+          <div class="trend__element">
+            <h3 class="author">Lewis Lowie</h3>
+            <div class="trend_paragraph">
+              <p>Miricale Culture</p>
+              <p class="nft__price">3.24 ETH</p>
+            </div>
+            <picture>
+              <source
+                srcset="
+                  ./images/trendBoxes@1x.jpg 1x,
+                  ./images/trendBoxes@2x.jpg 2x
+                "
+              />
+              <img src="./images/trendBoxes@1x.jpg" alt="Boxes NFT" />
+            </picture>
+          </div>
+          <div class="trend__element">
+            <h3 class="author">Mandy Ross</h3>
+            <div class="trend_paragraph">
+              <p>Miricale Culture</p>
+              <p class="nft__price">3.24 ETH</p>
+            </div>
+            <picture>
+              <source
+                srcset="
+                  ./images/trendPool@1x.jpg 1x,
+                  ./images/trendPool@2x.jpg 2x
+                "
+              />
+              <img src="./images/trendPool@1x.jpg" alt="Swimming pool NFT" />
+            </picture>
+          </div>
+          <div class="trend__element">
+            <a class="button__marketplace" href="">View marketplace</a>
+          </div>
+        </div>
+      </section>
+      <section class="artists">
+        <div class="container">
+          <div class="artists__textcontainer">
+            <div class="artists__text">
+              <a class="button__artists" href="">View all artists</a>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur dolore adipiscing elit,
+                sed
+              </p>
+            </div>
+            <h2 class="section__title">Popular artists</h2>
+          </div>
+          <div class="artists__profilecontainer">
+            <div class="artist__profile">
+              <picture class="artist__photo">
+                <source
+                  srcset="
+                    ./images/santigo@1x.jpg 1x,
+                    ./images/santigo@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/santigo@1x.jpg"
+                  alt="Photo of Jason Santigo"
+                />
+              </picture>
+              <h3 class="artist">Jason Santigo</h3>
+              <a class="button follow__button" href="">Follow</a>
+            </div>
+            <div class="artist__profile">
+              <picture class="artist__photo">
+                <source
+                  srcset="./images/rogan@1x.jpg 1x, ./images/rogan@2x.jpg 2x"
+                />
+                <img src="./images/rogan@1x.jpg" alt="Photo of Dan Rogan" />
+              </picture>
+              <h3 class="artist">Dan Rogan</h3>
+              <a class="button follow__button" href="">Follow</a>
+            </div>
+            <div class="artist__profile">
+              <picture class="artist__photo">
+                <source
+                  srcset="./images/mason@1x.jpg 1x, ./images/mason@2x.jpg 2x"
+                />
+                <img src="./images/mason@1x.jpg" alt="Photo of Rachel Mason" />
+              </picture>
+              <h3 class="artist">Rachel Mason</h3>
+              <a class="button follow__button" href="">Follow</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="partners">
+        <div class="container">
+          <h2 class="section__title">Backed by the best</h2>
+          <p class="partners__text">
+            Lorem ipsum dolor sit amet, consectetur dolore adipiscing elit,<br />
+            sed do eiusmod tempor incididunt.
+          </p>
+          <div class="partners__container">
+            <div class="partner"><img src="./images/foxhub.svg" /></div>
+            <div class="partner"><img src="./images/nirastate.svg" /></div>
+            <div class="partner"><img src="./images/hexlab.svg" /></div>
+            <div class="partner"><img src="./images/zootv.svg" /></div>
+          </div>
+          <picture class="partner__hand">
+            <source
+              srcset="
+                ./images/gradient-hand@1x.png,
+                ./images/gradient-hand@2x.png 2x
+              "
+            />
+            <img src="./images/gradient-hand@1x.png" />
+          </picture>
+        </div>
+      </section>
+      <section class="subscribe">
+        <div class="subscribe__container container">
+          <h2 class="section__title">Never miss a drop</h2>
+          <p class="subscribe__text">
+            Lorem ipsum dolor sit amet, consectetur dolore adipiscing elit,<br />
+            sed do eiusmod tempor incididunt.
+          </p>
+          <form class="subscribe__form">
+            <input
+              class="subscribe__input"
+              type="email"
+              name="email"
+              placeholder="email@example.com"
+              required
+            />
+            <button type="submit" class="subscribe__button">Subscribe</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer__wrapper">
+        <a class="site__logo" href="index.html">
+          <img
+            width="60"
+            height="60"
+            srcset="images/logo.svg"
+            alt="NFT me logo"
+            class="logo-image"
+          />
+        </a>
+        <nav class="footer__nav">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="item" href="#">Marketplace</a>
+            </li>
+            <li class="footer__item"><a class="item" href="#">Artists</a></li>
+            <li class="footer__item"><a class="item" href="#">Contact</a></li>
+          </ul>
+          <ul class="footer__socials">
+            <li class="footer__social__item">
+              <a
+                class="social__item"
+                href="https://linkedin.com/"
+                title="LinkedIn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="./images/linkedIn.svg" />
+              </a>
+            </li>
+            <li class="footer__social__item">
+              <a
+                class="social__item"
+                href="https://facebook.com/"
+                title="Facebook"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="./images/facebook.svg" />
+              </a>
+            </li>
+            <li class="footer__social__item">
+              <a
+                class="social__item"
+                href="https://twitter.com/"
+                title="Twitter"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="./images/twitter.svg" />
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <ul class="footer__list footer__list--underline">
+        <li class="footer__item--underline">
+          <a href="">Crafted by Marion & Co.</a>
+        </li>
+        <li class="footer__item--underline">
+          <a href="">Powered by Webflow</a>
+        </li>
+        <li class="footer__item--underline"><a href="">More templates</a></li>
+        <li class="footer__item--underline"><a href="">License</a></li>
+        <li class="footer__item--underline"><a href="">Style Guide</a></li>
+      </ul>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>
