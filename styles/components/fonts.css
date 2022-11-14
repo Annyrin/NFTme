@@ -5,7 +5,6 @@
     url("../../fonts/SourceSansPro-Regular.woff") format("woff"),
     url("../../fonts/SourceSansPro-Regular.ttf") format("ttf");
   font-weight: 400;
-  font-display: swap;
 }
 
 @font-face {
@@ -15,5 +14,4 @@
     url("../../fonts/PaytoneOne-Regular.woff") format("woff"),
     url("../../fonts/PaytoneOne-Regular.ttf") format("ttf");
   font-weight: 400;
-  font-display: swap;
 }
