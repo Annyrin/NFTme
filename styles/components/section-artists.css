@@ -93,7 +93,7 @@
   position: absolute;
   text-align: center;
   width: 100%;
-  top: 250px;
+  top: 257px;
   font-family: "PaytoneOne";
   font-size: 32px;
 }
@@ -109,6 +109,9 @@
   .artists {
     padding-top: 50px;
     padding-bottom: 80px;
+  }
+  .artist {
+    font-size: 26px;
   }
 }
 
@@ -130,6 +133,9 @@
   br {
     display: none;
   }
+  .artists {
+    padding-bottom: 45px;
+  }
   .artists__textcontainer {
     flex-direction: column;
     justify-content: space-between;
@@ -142,6 +148,10 @@
 
   .artists .section__title {
     text-align: center;
+  }
+
+  .follow__button {
+    top: 320px;
   }
 }
 

@@ -61,6 +61,7 @@
   .footer__list--underline {
     flex-wrap: wrap;
     gap: 5px;
+    padding-top: 10px;
   }
 
   .footer__item--underline {
