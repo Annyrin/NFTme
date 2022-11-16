@@ -44,6 +44,14 @@
 }
 
 @media screen and (max-width: 888px) {
+  .footer__item--underline {
+    text-align: center;
+  }
+
+  .footer__item--underline:first-of-type {
+    margin-left: 30px;
+  }
+
   .footer__wrapper {
     padding-top: 45px;
   }
@@ -58,6 +66,10 @@
 }
 
 @media screen and (max-width: 580px) {
+  .footer__item--underline:first-of-type {
+    margin-left: 0px;
+  }
+
   .footer__list--underline {
     flex-wrap: wrap;
     gap: 5px;

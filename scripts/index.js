@@ -1,10 +1,11 @@
-const $menuButton = document.querySelector("#menu-button");
-const $nav = document.querySelector("#nav");
+const menuButton = document.querySelector("#menu-button");
+const nav = document.querySelector("#nav");
+const body = document.querySelector("#body");
 
-$menuButton.addEventListener("click", () => {
-  $menuButton.classList.toggle("header__menu--active");
-
-  $nav.classList.toggle("header__nav--active");
+menuButton.addEventListener("click", () => {
+  body.classList.toggle("stopped");
+  menuButton.classList.toggle("header__menu--active");
+  nav.classList.toggle("header__nav--active");
 });
 
 const makeSwiper = (selector) => {

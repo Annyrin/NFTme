@@ -24,7 +24,6 @@
 }
 
 .site__logo {
-  z-index: 1000;
   position: relative;
   display: inline-flex;
   align-items: center;
@@ -44,7 +43,6 @@
   height: 100%;
 }
 
-/* Бургерс*/
 .header__menu {
   position: relative;
   z-index: 1000;
@@ -70,14 +68,13 @@
 
 .header__menu .line:nth-of-type(2) {
   top: 50%;
-  transform: translateY(-50%);
 }
 
 .header__menu .line:nth-of-type(3) {
-  bottom: 2px;
+  bottom: 0px;
 }
 
-@media screen and (max-width: 888px) {
+@media screen and (max-width: 664px) {
   .container {
     justify-content: space-between;
     padding-left: 30px;
@@ -139,10 +136,6 @@
   .button__header {
     margin-top: 30px;
   }
-}
-
-/* Phone Header */
-@media screen and (max-width: 481px) {
   .header {
     position: fixed;
     height: 50px;

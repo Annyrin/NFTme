@@ -118,6 +118,11 @@
     z-index: -1;
   }
 }
+@media screen and (max-width: 1132px) {
+  .intro br {
+    display: none;
+  }
+}
 
 @media screen and (max-width: 888px) {
   .title__text {
