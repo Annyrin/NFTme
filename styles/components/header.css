@@ -78,6 +78,11 @@
 }
 
 @media screen and (max-width: 888px) {
+  .header {
+    position: sticky;
+    background-color: #0d0d0e;
+  }
+
   .container {
     justify-content: space-between;
     padding-left: 30px;
