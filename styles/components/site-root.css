@@ -13,7 +13,7 @@ ul {
 }
 
 .stopped {
-  overflow: hidden;
+  position: fixed;
 }
 
 .container {
