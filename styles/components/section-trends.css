@@ -38,6 +38,7 @@
   padding-top: 18px;
   columns: 2 auto;
   column-gap: 86px;
+  column-fill: auto;
 }
 
 .button__marketplace {
