@@ -141,6 +141,25 @@
   }
 }
 
+/* Phone Header */
+@media screen and (max-width: 481px) {
+  .header {
+    position: fixed;
+    height: 50px;
+    background-color: #0d0d0e;
+    transition: transform 0.6s linear;
+  }
+
+  .header.hide {
+    transform: translateY(-50px);
+  }
+
+  .header__logo {
+    padding-top: 3px;
+    scale: 0.77;
+  }
+}
+
 @keyframes menu-active {
   from {
     left: 100%;
