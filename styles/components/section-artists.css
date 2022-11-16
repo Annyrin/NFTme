@@ -133,12 +133,18 @@
   br {
     display: none;
   }
+
   .artists {
     padding-bottom: 45px;
   }
+
   .artists__textcontainer {
     flex-direction: column;
     justify-content: space-between;
+  }
+
+  .artists__textcontainer > .section__title {
+    order: -1;
   }
 
   .artists__profilecontainer {
