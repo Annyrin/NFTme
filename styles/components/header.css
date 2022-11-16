@@ -78,11 +78,6 @@
 }
 
 @media screen and (max-width: 888px) {
-  .header {
-    position: sticky;
-    background-color: #0d0d0e;
-  }
-
   .container {
     justify-content: space-between;
     padding-left: 30px;
@@ -143,16 +138,6 @@
 
   .button__header {
     margin-top: 30px;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .header {
-    height: 52px;
-  }
-
-  .header__menu .line:nth-of-type(1) {
-    top: 3px;
   }
 }
 
