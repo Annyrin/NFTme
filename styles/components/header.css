@@ -146,6 +146,16 @@
   }
 }
 
+@media screen and (max-width: 888px) {
+  .header {
+    height: 52px;
+  }
+
+  .header__menu .line:nth-of-type(1) {
+    top: 3px;
+  }
+}
+
 @keyframes menu-active {
   from {
     left: 100%;
