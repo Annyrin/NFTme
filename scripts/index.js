@@ -61,7 +61,7 @@ const lazyImages = document.querySelectorAll(".partner__hand");
 const callback = (entries, observer) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      entry.target.classList.add(".partner__container--scaled");
+      entry.target.classList.add("partner__hand--scaled");
       entry.target.src = entry.target.dataset.src;
       observer.unobserve(entry.target);
     }
@@ -70,7 +70,9 @@ const callback = (entries, observer) => {
 
 const options = {
   // root: по умолчанию window, но можно задать любой элемент-контейнер
+
   root: document.querySelector(".partner__container"),
+  rootMargin: "0px 0px 0px 0px",
   threshold: [0, 0.25],
 };
 
