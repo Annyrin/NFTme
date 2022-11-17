@@ -3,11 +3,12 @@
   padding-bottom: 100px;
   background-color: #262627;
 }
-.info__container p {
+
+.info__paragraph {
   color: #e5e5e5;
 }
 
-.info__container dd {
+.info__list-items {
   color: #e5e5e5;
 }
 
@@ -20,55 +21,51 @@
   justify-content: space-between;
 }
 
-.info__wrapper dl {
+.info__list {
   padding-top: 10px;
   display: flex;
   gap: 60px;
 }
 
-.info__wrapper dl dd {
+.info__list-items {
   font-size: 18px;
   text-align: center;
 }
 
-.info__wrapper dl dt {
+.info__list-numbers {
   font-family: "PaytoneOne";
   font-size: 50px;
   text-align: center;
 }
 
 @media screen and (max-width: 1200px) {
-  .info__wrapper dl dt {
+  .info__list-numbers {
     font-family: "PaytoneOne";
     font-size: 40px;
     text-align: center;
   }
 
-  .info br {
+  .info__next-line {
     display: none;
   }
 
-  .info__wrapper dl {
+  .info__list {
     padding-left: 15px;
     gap: 30px;
   }
 }
 
 @media screen and (max-width: 888px) {
-  .info br {
-    display: none;
-  }
-
   .info__container {
     padding-top: 50px;
     padding-bottom: 50px;
   }
 
-  .info__wrapper dl dt {
+  .info__list-numbers {
     font-size: 30px;
   }
 
-  .info__wrapper dl dd {
+  .info__list-items {
     font-size: 16px;
   }
 
@@ -80,13 +77,13 @@
 }
 
 @media screen and (max-width: 400px) {
-  .info__wrapper dl {
+  .info__list {
     gap: 30px;
   }
 }
 
 @media screen and (max-width: 320px) {
-  .info__wrapper dl {
+  .info__list {
     gap: 7px;
   }
 }

@@ -102,7 +102,7 @@
     font-size: 18px;
   }
 
-  .trends br {
+  .trends__next-line {
     display: none;
   }
 
@@ -115,7 +115,7 @@
 }
 
 @media screen and (max-width: 560px) {
-  .trend__element img {
+  .trend__element-photo {
     width: 90%;
     height: 90%;
     display: block;

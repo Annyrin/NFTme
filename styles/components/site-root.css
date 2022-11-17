@@ -8,10 +8,6 @@
   letter-spacing: 1px;
 }
 
-ul {
-  list-style: none;
-}
-
 .stopped {
   position: fixed;
 }

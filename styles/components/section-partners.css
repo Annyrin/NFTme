@@ -35,10 +35,17 @@
 }
 
 .partner__hand {
+  height: 733px;
+  width: 555px;
   position: absolute;
   left: 50%;
   top: 45%;
   transform: translateX(-50%);
+  transition: transform 0.3s;
+}
+
+.partner__hand--scaled {
+  transform: scale(1.2);
 }
 
 @media screen and (max-width: 1130px) {

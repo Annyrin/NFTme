@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en" prefix="og: https://ogp.me/ns#">
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content="NFTme website" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="NFT, NFTme, NFT marketplace" />
+    <meta property="og:locale" content="en_EN" />
     <meta property="og:title" content="NFTme website" />
-    <meta property="og:description" content="Best NFT marketplace" />
+    <meta property="og:site_name" content="NFTme" />
     <meta property="og:image" content="./images/title@1x.jpg" />
     <meta property="og:url" content="https://annyrin.github.io/NFTme/" />
     <title>NFT me</title>
@@ -68,7 +69,7 @@
     <meta name="msapplication-TileColor" content="#0d0d0e" />
     <meta name="theme-color" content="#0d0d0e" />
   </head>
-  <body id="body">
+  <body>
     <header class="header">
       <div class="container header__wrapper">
         <a class="header__logo" href="index.html">
@@ -81,13 +82,13 @@
           />
         </a>
 
-        <button class="header__menu" id="menu-button" aria-label="Menu">
+        <button class="header__menu" aria-label="Menu">
           <span class="line"></span>
           <span class="line"></span>
           <span class="line"></span>
         </button>
 
-        <nav class="header__nav" id="nav">
+        <nav class="header__nav">
           <ul class="header__list">
             <li class="header__item">
               <a class="link" href="#">Marketplace</a>
@@ -109,16 +110,16 @@
           </h1>
           <p class="intro__text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Suspendisse<br />
+            Suspendisse<br class="intro__next-line" />
             varius enim in eros elementum tristique. Duis cursus, mi quis
-            viverra<br />
+            viverra<br class="intro__next-line" />
             ornare, eros dolor interdum.
           </p>
         </div>
         <div class="intro__button">
           <a class="video__link" href="#"
             >Watch video
-            <span>
+            <span class="video__link-container">
               <svg
                 width="26"
                 height="22"
@@ -151,25 +152,33 @@
       <section class="info">
         <div class="container info__container">
           <div class="info__wrapper">
-            <p>
-              lorem ipsum dolor sit amet, consectetur<br />
-              adipiscing elit. Suspendisse varius enim in eros<br />
-              elementum tristique. Duis cursus, mi quis<br />
-              viverra ornare, eros dolor interdum nulla, ut<br />
+            <p class="info__paragraph">
+              lorem ipsum dolor sit amet, consectetur<br
+                class="info__next-line"
+              />
+              adipiscing elit. Suspendisse varius enim in eros<br
+                class="info__next-line"
+              />
+              elementum tristique. Duis cursus, mi quis<br
+                class="info__next-line"
+              />
+              viverra ornare, eros dolor interdum nulla, ut<br
+                class="info__next-line"
+              />
               commodo diam libero vitae erat
             </p>
-            <dl>
-              <div>
-                <dt>17K</dt>
-                <dd>Artwork</dd>
+            <dl class="info__list">
+              <div class="info__list-container">
+                <dt class="info__list-numbers">17K</dt>
+                <dd class="info__list-items">Artwork</dd>
               </div>
-              <div>
-                <dt>4.5K</dt>
-                <dd>Auctions</dd>
+              <div class="info__list-container">
+                <dt class="info__list-numbers">4.5K</dt>
+                <dd class="info__list-items">Auctions</dd>
               </div>
-              <div>
-                <dt>23</dt>
-                <dd>Artists</dd>
+              <div class="info__list-container">
+                <dt class="info__list-numbers">23</dt>
+                <dd class="info__list-items">Artists</dd>
               </div>
             </dl>
           </div>
@@ -182,17 +191,32 @@
               <source
                 srcset="./images/yellow@1x.jpg 1x, ./images/yellow@2x.jpg 2x"
               />
-              <img src="./images/yellow@1x.jpg" alt="Flower NFT" />
+              <img
+                width="469"
+                height="402"
+                src="./images/yellow@1x.jpg"
+                alt="Flower NFT"
+              />
             </picture>
             <picture class="swiper-slide">
               <source
                 srcset="./images/dots@1x.jpg 1x, ./images/dots@2x.jpg 2x"
               />
-              <img src="./images/dots@1x.jpg" alt="Dots NFT" />
+              <img
+                width="469"
+                height="402"
+                src="./images/dots@1x.jpg"
+                alt="Dots NFT"
+              />
             </picture>
             <picture class="swiper-slide">
               <source srcset="./images/man@1x.jpg 1x, ./images/man@2x.jpg 2x" />
-              <img src="./images/man@1x.jpg" alt="Man NFT" />
+              <img
+                width="469"
+                height="402"
+                src="./images/man@1x.jpg"
+                alt="Man NFT"
+              />
             </picture>
           </div>
         </div>
@@ -200,19 +224,34 @@
           <div class="swiper-wrapper">
             <picture class="swiper-slide">
               <source srcset="./images/car@1x.jpg 1x, ./images/car@2x.jpg 2x" />
-              <img src="./images/car@1x.jpg" alt="Car NFT" />
+              <img
+                width="469"
+                height="402"
+                src="./images/car@1x.jpg"
+                alt="Car NFT"
+              />
             </picture>
             <picture class="swiper-slide">
               <source
                 srcset="./images/faces@1x.jpg 1x, ./images/faces@2x.jpg 2x"
               />
-              <img src="./images/face@1x.jpg" alt="Faces NFT" />
+              <img
+                width="469"
+                height="402"
+                src="./images/face@1x.jpg"
+                alt="Faces NFT"
+              />
             </picture>
             <picture class="swiper-slide">
               <source
                 srcset="./images/hand@1x.jpg 1x, ./images/hand@2x.jpg 2x"
               />
-              <img src="./images/hand@1x.jpg" alt="Hand NFT" />
+              <img
+                width="469"
+                height="402"
+                src="./images/hand@1x.jpg"
+                alt="Hand NFT"
+              />
             </picture>
           </div>
         </div>
@@ -307,9 +346,11 @@
         <div class="trends__container">
           <div class="trend__element">
             <p class="trend__info">
-              Lorem ipsum dolor sit amet, consectetur dolore adipiscing<br />elit,
-              sed do eiusmod tempor incididunt ut labore et dolore<br />magna
-              aliqua.
+              Lorem ipsum dolor sit amet, consectetur dolore adipiscing<br
+                class="trends__next-line"
+              />elit, sed do eiusmod tempor incididunt ut labore et dolore<br
+                class="trends__next-line"
+              />magna aliqua.
             </p>
           </div>
           <div class="trend__element">
@@ -326,6 +367,9 @@
                 "
               />
               <img
+                width="557"
+                height="450"
+                class="trend__element-photo"
                 loading="lazy"
                 src="./images/trendFace@1x.jpg"
                 alt="Women face NFT"
@@ -346,6 +390,9 @@
                 "
               />
               <img
+                width="557"
+                height="450"
+                class="trend__element-photo"
                 loading="lazy"
                 src="./images/trendMess@1x.jpg"
                 alt="Mess NFT"
@@ -366,6 +413,9 @@
                 "
               />
               <img
+                width="557"
+                height="450"
+                class="trend__element-photo"
                 loading="lazy"
                 src="./images/trendInfinity@1x.jpg"
                 alt="Infinity  NFT"
@@ -386,6 +436,9 @@
                 "
               />
               <img
+                width="557"
+                height="450"
+                class="trend__element-photo"
                 loading="lazy"
                 src="./images/trendBrain@1x.jpg"
                 alt="Brain NFT"
@@ -406,6 +459,9 @@
                 "
               />
               <img
+                width="557"
+                height="450"
+                class="trend__element-photo"
                 loading="lazy"
                 src="./images/trendBoxes@1x.jpg"
                 alt="Boxes NFT"
@@ -426,6 +482,9 @@
                 "
               />
               <img
+                width="557"
+                height="450"
+                class="trend__element-photo"
                 loading="lazy"
                 src="./images/trendPool@1x.jpg"
                 alt="Swimming pool NFT"
@@ -498,16 +557,36 @@
           </p>
           <div class="partners__container">
             <div class="partner">
-              <img loading="lazy" src="./images/foxhub.svg" />
+              <img
+                width="100"
+                height="100"
+                loading="lazy"
+                src="./images/foxhub.svg"
+              />
             </div>
             <div class="partner">
-              <img loading="lazy" src="./images/nirastate.svg" />
+              <img
+                width="100"
+                height="100"
+                loading="lazy"
+                src="./images/nirastate.svg"
+              />
             </div>
             <div class="partner">
-              <img loading="lazy" src="./images/hexlab.svg" />
+              <img
+                width="100"
+                height="100"
+                loading="lazy"
+                src="./images/hexlab.svg"
+              />
             </div>
             <div class="partner">
-              <img loading="lazy" src="./images/zootv.svg" />
+              <img
+                width="100"
+                height="100"
+                loading="lazy"
+                src="./images/zootv.svg"
+              />
             </div>
           </div>
           <picture class="partner__hand">
@@ -517,7 +596,12 @@
                 ./images/gradient-hand@2x.png 2x
               "
             />
-            <img loading="lazy" src="./images/gradient-hand@1x.png" />
+            <img
+              height="733"
+              width="555"
+              loading="lazy"
+              src="./images/gradient-hand@1x.png"
+            />
           </picture>
         </div>
       </section>
@@ -569,7 +653,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src="./images/linkedIn.svg" />
+                <img height="46" width="46" src="./images/linkedIn.svg" />
               </a>
             </li>
             <li class="footer__social__item">
@@ -580,7 +664,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src="./images/facebook.svg" />
+                <img height="46" width="46" src="./images/facebook.svg" />
               </a>
             </li>
             <li class="footer__social__item">
@@ -591,7 +675,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src="./images/twitter.svg" />
+                <img height="46" width="46" src="./images/twitter.svg" />
               </a>
             </li>
           </ul>

@@ -1,6 +1,6 @@
-const menuButton = document.querySelector("#menu-button");
-const nav = document.querySelector("#nav");
-const body = document.querySelector("#body");
+const menuButton = document.querySelector(".header__menu");
+const nav = document.querySelector(".header__nav");
+const body = document.querySelector("body");
 
 menuButton.addEventListener("click", () => {
   body.classList.toggle("stopped");
@@ -33,7 +33,6 @@ mySwiper2.el.addEventListener("mouseleave", function (event) {
   mySwiper2.autoplay.start();
 });
 
-// Mobile Header
 let lastScroll = 0;
 const defaultOffset = 200;
 const header = document.querySelector(".header");
@@ -55,3 +54,26 @@ window.addEventListener("scroll", () => {
 
   lastScroll = scrollPosition();
 });
+
+// hand Animation
+const lazyImages = document.querySelectorAll(".partner__hand");
+
+const callback = (entries, observer) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add(".partner__container--scaled");
+      entry.target.src = entry.target.dataset.src;
+      observer.unobserve(entry.target);
+    }
+  });
+};
+
+const options = {
+  // root: по умолчанию window, но можно задать любой элемент-контейнер
+  root: document.querySelector(".partner__container"),
+  threshold: [0, 0.25],
+};
+
+const observer = new IntersectionObserver(callback, options);
+
+lazyImages.forEach((image) => observer.observe(image));
