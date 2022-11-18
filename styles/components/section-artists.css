@@ -127,13 +127,13 @@
   .button__artists {
     font-size: 22px;
   }
+
+  .artists__textcontainer {
+    height: 0;
+  }
 }
 
 @media screen and (max-width: 500px) {
-  br {
-    display: none;
-  }
-
   .artists {
     padding-bottom: 45px;
   }

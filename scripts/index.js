@@ -55,8 +55,7 @@ window.addEventListener("scroll", () => {
   lastScroll = scrollPosition();
 });
 
-// hand Animation
-const lazyImages = document.querySelectorAll(".partner__hand");
+const image = document.querySelector(".partner__hand");
 
 const callback = (entries, observer) => {
   entries.forEach((entry) => {
@@ -69,13 +68,9 @@ const callback = (entries, observer) => {
 };
 
 const options = {
-  // root: по умолчанию window, но можно задать любой элемент-контейнер
-
-  root: document.querySelector(".partner__container"),
-  rootMargin: "0px 0px 0px 0px",
-  threshold: [0, 0.25],
+  threshold: 0.5,
 };
 
 const observer = new IntersectionObserver(callback, options);
 
-lazyImages.forEach((image) => observer.observe(image));
+observer.observe(image);
