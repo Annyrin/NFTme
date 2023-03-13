@@ -10,10 +10,10 @@ menuButton.addEventListener("click", () => {
 
 const makeSwiper = (selector) => {
   return new Swiper(selector, {
-    spaceBetween: 64,
+    spaceBetween: 100,
     centeredSlides: true,
     autoplay: {
-      delay: 2000,
+      delay: 3000,
       pauseOnMouseEnter: true,
     },
     slidesPerView: "auto",
@@ -25,11 +25,11 @@ const makeSwiper = (selector) => {
 let mySwiper1 = makeSwiper(".slider__left");
 let mySwiper2 = makeSwiper(".slider__right");
 
-mySwiper1.el.addEventListener("mouseleave", function (event) {
+mySwiper1.el.addEventListener("mouseleave", function () {
   mySwiper1.autoplay.start();
 });
 
-mySwiper2.el.addEventListener("mouseleave", function (event) {
+mySwiper2.el.addEventListener("mouseleave", function () {
   mySwiper2.autoplay.start();
 });
 

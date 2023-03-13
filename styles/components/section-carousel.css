@@ -9,29 +9,17 @@
 }
 
 .swiper {
-  width: 100%;
+  width: 40%;
 }
 
 .swiper-slide {
-  width: 469px !important;
-  height: 402px !important;
+  width: 469px;
+  height: 402px;
 }
 
-.slider__left {
-  padding-right: 100px !important;
-}
-
-.slider__right {
-  padding-left: 100px !important;
-}
-
-@media screen and (max-width: 1220px) {
-  .slider__left {
-    padding-right: 50px !important;
-  }
-
-  .slider__right {
-    padding-left: 50px !important;
+@media screen and (max-width: 1500px) {
+  .swiper {
+    width: 50%;
   }
 }
 
@@ -41,13 +29,8 @@
     padding-bottom: 75px;
     gap: 30px;
   }
-
-  .slider__left {
-    padding-right: 0px !important;
-  }
-
-  .slider__right {
-    padding-left: 0px !important;
+  .swiper {
+    width: 60%;
   }
 }
 
@@ -55,5 +38,8 @@
   .carousel {
     padding-top: 5px;
     padding-bottom: 60px;
+  }
+  .swiper {
+    width: 70%;
   }
 }
